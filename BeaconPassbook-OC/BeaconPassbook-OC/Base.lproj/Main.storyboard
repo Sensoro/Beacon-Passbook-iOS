@@ -28,16 +28,53 @@
                                     <action selector="addPassbook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pgl-V1-WUL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Config" translatesAutoresizingMaskIntoConstraints="NO" id="7Zy-28-jGd">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="PzT-v2-3du"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用云子配置工具扫描上面二维码，或者把图像保存后，再用配置工具读取。以便把云子配置为试验用Beacon。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uH-Mj-W2T">
+                                <rect key="frame" x="180" y="441" width="240" height="81.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="obA-8H-mlR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1U-1x-Pf9">
+                                <rect key="frame" x="240" y="542" width="120" height="30"/>
+                                <state key="normal" title="保存二维码到相册">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveToAlbum:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UF8-Gd-x29"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="S1U-1x-Pf9" firstAttribute="top" secondItem="3uH-Mj-W2T" secondAttribute="bottom" constant="19.5" id="0rO-bp-5Ke"/>
                             <constraint firstAttribute="centerY" secondItem="iOb-dJ-b3g" secondAttribute="centerY" constant="180" id="6uk-fb-soc"/>
+                            <constraint firstItem="7Zy-28-jGd" firstAttribute="centerX" secondItem="3uH-Mj-W2T" secondAttribute="centerX" id="AsR-hx-JQH"/>
+                            <constraint firstItem="7Zy-28-jGd" firstAttribute="top" secondItem="iOb-dJ-b3g" secondAttribute="bottom" constant="45" id="JBp-jv-9BK"/>
+                            <constraint firstItem="3uH-Mj-W2T" firstAttribute="top" secondItem="7Zy-28-jGd" secondAttribute="bottom" constant="21" id="Khk-AU-gdX"/>
+                            <constraint firstAttribute="centerY" secondItem="7Zy-28-jGd" secondAttribute="centerY" id="fVz-oF-z5Z"/>
+                            <constraint firstItem="S1U-1x-Pf9" firstAttribute="centerX" secondItem="7Zy-28-jGd" secondAttribute="centerX" id="mp4-Kt-Ky9"/>
+                            <constraint firstAttribute="centerX" secondItem="7Zy-28-jGd" secondAttribute="centerX" id="wuh-q1-rMN"/>
                             <constraint firstAttribute="centerX" secondItem="iOb-dJ-b3g" secondAttribute="centerX" id="y7w-DF-Te4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="7Zy-28-jGd" id="U0b-oc-VEx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Config" width="255" height="255"/>
+    </resources>
 </document>

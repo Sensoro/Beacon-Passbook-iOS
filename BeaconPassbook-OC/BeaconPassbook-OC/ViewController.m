@@ -48,6 +48,17 @@
     }
 }
 
+- (IBAction)saveToAlbum:(id)sender {
+    /**
+     *  将图片保存到iPhone本地相册
+     *  UIImage *image            图片对象
+     *  id completionTarget       响应方法对象
+     *  SEL completionSelector    方法
+     *  void *contextInfo
+     */
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+}
+
 #pragma mark PKAddPassesViewControllerDelegate
 
 -(void)addPassesViewControllerDidFinish:(PKAddPassesViewController *)controller{
@@ -55,4 +66,18 @@
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+    
+    if (error == nil) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tips" message:@"Has been saved to the album" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+        
+    }else{
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tips" message:@"Failure" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+    }
+    
+}
 @end
