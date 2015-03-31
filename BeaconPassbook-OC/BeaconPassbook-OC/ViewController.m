@@ -70,12 +70,20 @@
     
     if (error == nil) {
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tips" message:@"Has been saved to the album" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"保存完成"
+                                                       delegate:self
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"OK", nil];
         [alert show];
         
     }else{
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tips" message:@"Failure" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"不能保存到相册。"
+                                                       delegate:self
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"OK", nil];
         [alert show];
     }
     

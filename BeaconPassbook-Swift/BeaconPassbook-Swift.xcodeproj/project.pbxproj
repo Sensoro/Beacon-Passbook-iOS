@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630EA0F01AC9505300390FF1 /* Generic.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 630EA0EF1AC9505300390FF1 /* Generic.pkpass */; };
+		63A0D9D71AC94B1000F546EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0D9D61AC94B1000F546EF /* AppDelegate.swift */; };
+		63A0D9D91AC94B1000F546EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0D9D81AC94B1000F546EF /* ViewController.swift */; };
+		63A0D9DC1AC94B1000F546EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0D9DA1AC94B1000F546EF /* Main.storyboard */; };
+		63A0D9DE1AC94B1000F546EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A0D9DD1AC94B1000F546EF /* Images.xcassets */; };
+		63A0D9E11AC94B1000F546EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A0D9DF1AC94B1000F546EF /* LaunchScreen.xib */; };
+		63A0D9ED1AC94B1000F546EF /* BeaconPassbook_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0D9EC1AC94B1000F546EF /* BeaconPassbook_SwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63A0D9E71AC94B1000F546EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0D9C91AC94B1000F546EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0D9D01AC94B1000F546EF;
+			remoteInfo = "BeaconPassbook-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630EA0EF1AC9505300390FF1 /* Generic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Generic.pkpass; sourceTree = "<group>"; };
+		63A0D9D11AC94B1000F546EF /* BeaconPassbook-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeaconPassbook-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0D9D51AC94B1000F546EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0D9D61AC94B1000F546EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63A0D9D81AC94B1000F546EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63A0D9DB1AC94B1000F546EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63A0D9DD1AC94B1000F546EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63A0D9E01AC94B1000F546EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		63A0D9E61AC94B1000F546EF /* BeaconPassbook-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeaconPassbook-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0D9EB1AC94B1000F546EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0D9EC1AC94B1000F546EF /* BeaconPassbook_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconPassbook_SwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63A0D9CE1AC94B1000F546EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0D9E31AC94B1000F546EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630EA0EE1AC9505300390FF1 /* Pass */ = {
+			isa = PBXGroup;
+			children = (
+				630EA0EF1AC9505300390FF1 /* Generic.pkpass */,
+			);
+			path = Pass;
+			sourceTree = "<group>";
+		};
+		63A0D9C81AC94B1000F546EF = {
+			isa = PBXGroup;
+			children = (
+				63A0D9D31AC94B1000F546EF /* BeaconPassbook-Swift */,
+				63A0D9E91AC94B1000F546EF /* BeaconPassbook-SwiftTests */,
+				63A0D9D21AC94B1000F546EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63A0D9D21AC94B1000F546EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A0D9D11AC94B1000F546EF /* BeaconPassbook-Swift.app */,
+				63A0D9E61AC94B1000F546EF /* BeaconPassbook-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63A0D9D31AC94B1000F546EF /* BeaconPassbook-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				630EA0EE1AC9505300390FF1 /* Pass */,
+				63A0D9D61AC94B1000F546EF /* AppDelegate.swift */,
+				63A0D9D81AC94B1000F546EF /* ViewController.swift */,
+				63A0D9DA1AC94B1000F546EF /* Main.storyboard */,
+				63A0D9DD1AC94B1000F546EF /* Images.xcassets */,
+				63A0D9DF1AC94B1000F546EF /* LaunchScreen.xib */,
+				63A0D9D41AC94B1000F546EF /* Supporting Files */,
+			);
+			path = "BeaconPassbook-Swift";
+			sourceTree = "<group>";
+		};
+		63A0D9D41AC94B1000F546EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63A0D9D51AC94B1000F546EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63A0D9E91AC94B1000F546EF /* BeaconPassbook-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A0D9EC1AC94B1000F546EF /* BeaconPassbook_SwiftTests.swift */,
+				63A0D9EA1AC94B1000F546EF /* Supporting Files */,
+			);
+			path = "BeaconPassbook-SwiftTests";
+			sourceTree = "<group>";
+		};
+		63A0D9EA1AC94B1000F546EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63A0D9EB1AC94B1000F546EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A0D9D01AC94B1000F546EF /* BeaconPassbook-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0D9F01AC94B1000F546EF /* Build configuration list for PBXNativeTarget "BeaconPassbook-Swift" */;
+			buildPhases = (
+				63A0D9CD1AC94B1000F546EF /* Sources */,
+				63A0D9CE1AC94B1000F546EF /* Frameworks */,
+				63A0D9CF1AC94B1000F546EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BeaconPassbook-Swift";
+			productName = "BeaconPassbook-Swift";
+			productReference = 63A0D9D11AC94B1000F546EF /* BeaconPassbook-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63A0D9E51AC94B1000F546EF /* BeaconPassbook-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0D9F31AC94B1000F546EF /* Build configuration list for PBXNativeTarget "BeaconPassbook-SwiftTests" */;
+			buildPhases = (
+				63A0D9E21AC94B1000F546EF /* Sources */,
+				63A0D9E31AC94B1000F546EF /* Frameworks */,
+				63A0D9E41AC94B1000F546EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A0D9E81AC94B1000F546EF /* PBXTargetDependency */,
+			);
+			name = "BeaconPassbook-SwiftTests";
+			productName = "BeaconPassbook-SwiftTests";
+			productReference = 63A0D9E61AC94B1000F546EF /* BeaconPassbook-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63A0D9C91AC94B1000F546EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Sensoro;
+				TargetAttributes = {
+					63A0D9D01AC94B1000F546EF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					63A0D9E51AC94B1000F546EF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 63A0D9D01AC94B1000F546EF;
+					};
+				};
+			};
+			buildConfigurationList = 63A0D9CC1AC94B1000F546EF /* Build configuration list for PBXProject "BeaconPassbook-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63A0D9C81AC94B1000F546EF;
+			productRefGroup = 63A0D9D21AC94B1000F546EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A0D9D01AC94B1000F546EF /* BeaconPassbook-Swift */,
+				63A0D9E51AC94B1000F546EF /* BeaconPassbook-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A0D9CF1AC94B1000F546EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0D9DC1AC94B1000F546EF /* Main.storyboard in Resources */,
+				63A0D9E11AC94B1000F546EF /* LaunchScreen.xib in Resources */,
+				63A0D9DE1AC94B1000F546EF /* Images.xcassets in Resources */,
+				630EA0F01AC9505300390FF1 /* Generic.pkpass in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0D9E41AC94B1000F546EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63A0D9CD1AC94B1000F546EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0D9D91AC94B1000F546EF /* ViewController.swift in Sources */,
+				63A0D9D71AC94B1000F546EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0D9E21AC94B1000F546EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0D9ED1AC94B1000F546EF /* BeaconPassbook_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63A0D9E81AC94B1000F546EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0D9D01AC94B1000F546EF /* BeaconPassbook-Swift */;
+			targetProxy = 63A0D9E71AC94B1000F546EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63A0D9DA1AC94B1000F546EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A0D9DB1AC94B1000F546EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63A0D9DF1AC94B1000F546EF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A0D9E01AC94B1000F546EF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63A0D9EE1AC94B1000F546EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63A0D9EF1AC94B1000F546EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63A0D9F11AC94B1000F546EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BeaconPassbook-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63A0D9F21AC94B1000F546EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BeaconPassbook-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63A0D9F41AC94B1000F546EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeaconPassbook-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconPassbook-Swift.app/BeaconPassbook-Swift";
+			};
+			name = Debug;
+		};
+		63A0D9F51AC94B1000F546EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeaconPassbook-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconPassbook-Swift.app/BeaconPassbook-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63A0D9CC1AC94B1000F546EF /* Build configuration list for PBXProject "BeaconPassbook-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0D9EE1AC94B1000F546EF /* Debug */,
+				63A0D9EF1AC94B1000F546EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0D9F01AC94B1000F546EF /* Build configuration list for PBXNativeTarget "BeaconPassbook-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0D9F11AC94B1000F546EF /* Debug */,
+				63A0D9F21AC94B1000F546EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0D9F31AC94B1000F546EF /* Build configuration list for PBXNativeTarget "BeaconPassbook-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0D9F41AC94B1000F546EF /* Debug */,
+				63A0D9F51AC94B1000F546EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63A0D9C91AC94B1000F546EF /* Project object */;
+}
