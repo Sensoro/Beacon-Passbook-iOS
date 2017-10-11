@@ -24,37 +24,38 @@ class ViewController: UIViewController, PKAddPassesViewControllerDelegate {
     }
 
     @IBAction func addPassbook(sender: AnyObject) {
-        if let passPath = NSBundle.mainBundle().URLForResource("Generic", withExtension: "pkpass"){
+        if let passPath = Bundle.main.url(forResource: "Generic", withExtension: "pkpass"){
             var error : NSError?;
-            let passData : NSData! = NSData(contentsOfURL: passPath)
-            let pkPass = PKPass(data : passData, error: &error);
-            
-            let pkLibrary = PKPassLibrary();
-            
-            if pkLibrary.containsPass(pkPass) {
-                UIApplication.sharedApplication().openURL(pkPass.passURL);
-            }else{
-                let vc = PKAddPassesViewController(pass: pkPass);
+            if let passData = try? Data(contentsOf: passPath) {
+                let pkPass = PKPass(data : passData, error: &error);
                 
-                vc.delegate = self;
-                presentViewController(vc, animated: true, completion: nil);
+                let pkLibrary = PKPassLibrary();
+                
+                if pkLibrary.containsPass(pkPass) {
+                    UIApplication.shared.openURL(pkPass.passURL!);
+                }else{
+                    let vc = PKAddPassesViewController(pass: pkPass);
+                    
+                    vc.delegate = self;
+                    present(vc, animated: true, completion: nil);
+                }
             }
         }
     }
 
     @IBAction func saveToAlbum(sender: AnyObject) {
         
-        UIImageWriteToSavedPhotosAlbum(image.image,
-            self,"image:didFinishSavingWithError:contextInfo:",nil);
+        UIImageWriteToSavedPhotosAlbum(image.image!,
+                                       self,#selector(image(image:didFinishSavingWithError:contextInfo:)),nil);
         
     }
     
     //MARK: PKAddPassesViewControllerDelegate
-    func addPassesViewControllerDidFinish(controller: PKAddPassesViewController!) {
-        controller.dismissViewControllerAnimated(true, completion: nil);
+    func addPassesViewControllerDidFinish(_ controller: PKAddPassesViewController) {
+        controller.dismiss(animated: true, completion: nil);
     }
     
-    func image(image : UIImage, didFinishSavingWithError error : NSError!, contextInfo info: UnsafePointer<Void>) {
+    @objc func image(image : UIImage, didFinishSavingWithError error : NSError!, contextInfo info: UnsafeRawPointer) {
         if error == nil {
             let alert = UIAlertView(title: "提示", message: "保存成功", delegate: nil, cancelButtonTitle: "OK");
             alert.show();
